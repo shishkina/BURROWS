@@ -1,0 +1,21 @@
+body {
+  background-color: lightblue;
+}
+
+table {
+  background-color: lightgrey;
+}
+
+
+th, td {
+    border-bottom: 1px solid black;
+}
+
+table {
+  padding: 1em;
+  border: 1px solid black;
+}
+
+tr:hover {
+  background-color: lightyellow;
+}

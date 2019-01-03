@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>WDI, meet DOM</title>
+  </head>
+  <body>
+    <ul>
+      <li> Lichard </li>
+      <li> Kathew </li>
+      <li> Omily </li>
+    </ul>
+
+    <script type="text/javascript">
+
+      const colors = ['red', 'blue', 'green'];
+
+      const liNodes = document.querySelectorAll('li');
+      for (let i = 0; i < liNodes.length; i++) {
+        liNodes[i].innerHTML += " The GReatat";
+        liNodes[i].style.color = colors[i];
+      }
+
+    </script>
+  </body>
+</html>

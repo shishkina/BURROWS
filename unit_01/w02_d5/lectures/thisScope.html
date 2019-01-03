@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+
+      class PersonBluePrint {
+        constructor(name) {
+          this.name = name;
+        }
+        sing() {
+          return 'On my own... pretending he\'s beside me';
+        }
+        slowlySing() {
+          const song = this.sing();
+          song.split(' ').forEach((word, idx) => {
+            setTimeout(() => {
+              console.log('THIS', word);
+            }, idx * 1000);
+          });
+        }
+      }
+
+      const lich = new Person('lichard');
+      lich.slowlySing();
+
+
+
+
+// Using a named function
+      function dance() {
+        return 'on my own';
+      }
+      setTimout(dance, 1000);
+
+// Using a classic annomious fucntion
+      setTimout(function(){
+        return 'pretending he bseidse'
+      }, 1000);
+
+// Using a fat arrow
+      setTimout(() => {
+        return 'pretending he bseidse'
+      }, 1000);
+
+
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>

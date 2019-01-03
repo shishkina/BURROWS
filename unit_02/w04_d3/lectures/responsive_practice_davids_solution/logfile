@@ -1,0 +1,16 @@
+FATAL:  lock file "postmaster.pid" already exists
+HINT:  Is another postmaster (PID 430) running in data directory "/Users/BestAndFoundHQ/pg_data"?
+FATAL:  lock file "postmaster.pid" already exists
+HINT:  Is another postmaster (PID 430) running in data directory "/Users/BestAndFoundHQ/pg_data"?
+FATAL:  lock file "postmaster.pid" already exists
+HINT:  Is another postmaster (PID 430) running in data directory "/Users/BestAndFoundHQ/pg_data"?
+FATAL:  lock file "postmaster.pid" already exists
+HINT:  Is another postmaster (PID 430) running in data directory "/Users/BestAndFoundHQ/pg_data"?
+FATAL:  lock file "postmaster.pid" already exists
+HINT:  Is another postmaster (PID 430) running in data directory "/Users/BestAndFoundHQ/pg_data"?
+FATAL:  lock file "postmaster.pid" already exists
+HINT:  Is another postmaster (PID 430) running in data directory "/Users/BestAndFoundHQ/pg_data"?
+FATAL:  lock file "postmaster.pid" already exists
+HINT:  Is another postmaster (PID 430) running in data directory "/Users/BestAndFoundHQ/pg_data"?
+FATAL:  lock file "postmaster.pid" already exists
+HINT:  Is another postmaster (PID 430) running in data directory "/Users/BestAndFoundHQ/pg_data"?

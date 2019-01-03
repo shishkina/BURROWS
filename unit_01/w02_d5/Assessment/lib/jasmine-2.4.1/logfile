@@ -1,0 +1,6 @@
+LOG:  database system was shut down at 2016-08-24 16:55:20 EDT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  autovacuum launcher started
+LOG:  database system is ready to accept connections
+FATAL:  lock file "postmaster.pid" already exists
+HINT:  Is another postmaster (PID 422) running in data directory "/Users/BestAndFoundHQ/pg_data"?

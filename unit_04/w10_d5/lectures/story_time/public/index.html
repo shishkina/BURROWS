@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      body {
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <h1>Welcome to Story Time</h1>
+
+    <form class="character-generator">
+      <input type="text" name="character[name]" placeholder="...name">
+      <input type="text" name="character[bio]" placeholder="...bio">
+      <input type="text" name="character[motive]" placeholder="...motive">
+      <input type="submit" value="Create">
+    </form>
+
+    <form class="story-generator">
+      <input type="text" name="story[title]" placeholder="...title">
+      <input type="text" name="story[body]" placeholder="...body">
+      <input type="submit" value="Write">
+    </form>
+
+
+    <form class="appearance-generator">
+      <select class="character-options" name="appearance[character_id]">
+      </select>
+      <select class="story-options" name="appearance[story_id]">
+      </select>
+      <input type="submit" value="Write">
+    </form>
+
+    <script type="text/javascript">
+
+      function setSelectOptions(cssSelector, url, key) {
+        fetch(url).then((response) => {
+          response.json().then((options) => {
+            const selectNode = document.querySelector(cssSelector);
+            options.forEach((option) => {
+              const optionNode = document.createElement('option');
+              optionNode.text = option[key];
+              optionNode.value = option.id;
+              selectNode.appendChild(optionNode);
+            });
+          });
+        });
+      }
+
+      setSelectOptions('.character-options', 'http://localhost:3000/api/v1/characters', 'name');
+      setSelectOptions('.story-options', 'http://localhost:3000/api/v1/stories', 'title');
+
+      function setCreateFormHandler(cssSelector, url) {
+        document.querySelector(cssSelector)
+                .addEventListener('submit', (e) => {
+                  e.preventDefault();
+                  fetch(url, {
+                    method: 'POST',
+                    body: new FormData(e.target),
+                  });
+                });
+      }
+
+      setCreateFormHandler('.character-generator', 'http://localhost:3000/api/v1/characters');
+      setCreateFormHandler('.story-generator', 'http://localhost:3000/api/v1/stories');
+      setCreateFormHandler('.appearance-generator', 'http://localhost:3000/api/v1/appearances');
+
+    </script>
+
+  </body>
+</html>

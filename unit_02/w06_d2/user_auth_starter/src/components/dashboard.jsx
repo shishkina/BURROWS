@@ -1,0 +1,1 @@
+// This will render our dashboard component, this will be a dummy component that will just render some text. However this route will be protected from viewing by anyone not logged in.

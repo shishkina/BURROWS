@@ -1,0 +1,50 @@
+body {
+  background-color: lightblue;
+  transition: background-color 5s;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+div.banner {
+  text-align: center;
+}
+
+form.todo-creation-machine {
+
+}
+
+form.todo-creation-machine input[type="text"] {
+  width: 75%;
+  font-size: 1.5em;
+  border-radius: 5%;
+}
+
+form.todo-creation-machine input[type="submit"] {
+  border: none;
+  outline: none;
+  font-size: 1.5em;
+  border-radius: 5%;
+}
+
+
+
+ul.todo-list {
+
+}
+
+li.todo-item {
+  border: 1px solid black;
+  background-color: rgb(198, 205, 56);
+  padding: .25em;
+  border-radius: 5%;
+}
+
+li.todo-item button.remove-todo {
+  background-color: pink;
+  display: inline-block;
+  border: none;
+  outline: none;
+}
+
+li.todo-item .task {
+  display: inline-block;
+}

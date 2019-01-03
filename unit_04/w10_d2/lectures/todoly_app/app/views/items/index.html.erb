@@ -1,0 +1,8 @@
+<h3>ITEMS</h3>
+
+<% @items.each do |item| %>
+  <p><%= item.description %></p>
+  <a href="/items/<%= item.id %>">VIEW</a>
+  <a href="/items/<%= item.id %>/edit" >EDIT</a>
+  <a href="/items/<%= item.id %>" data-method="delete">DESTROY</a>
+<% end %>

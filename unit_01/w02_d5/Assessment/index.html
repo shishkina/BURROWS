@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p>Is there a green dot here?</p>
+	<div class="container">
+	</div>
+	<p>If so... the circle looks great!</p>
+	<script type="text/javascript" src="src/Meerkat.js"></script>
+	<script type="text/javascript" src="src/CircleView.js"></script>
+	<script type="text/javascript">
+
+		// This is simply to demo the circle view
+		// No work needs to be done here
+		const circle = new CircleView(document.querySelector('div.container'), '10px');
+		circle.color = 'green';
+		circle.render();
+
+	</script>
+</body>
+</html>

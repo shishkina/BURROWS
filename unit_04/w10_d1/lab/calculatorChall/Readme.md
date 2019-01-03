@@ -1,0 +1,3 @@
+Build a test driven calculator...
+- should be able to add, subtract, multiple, etc.
+- should hold on to previous answer so I can add, subtract, multiply, etc. the previous answer... (much like a normal calculator)

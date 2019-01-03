@@ -1,0 +1,1 @@
+**Using setTimeout and jQuery, manipulate the CSS of the div with the id of pony so that it trots across the screen. ALL OF YOUR CSS has been provided**

@@ -1,0 +1,7 @@
+* {
+  transition: background-color 5s, color 5s;
+}
+
+body {
+  background-color: lightblue;
+}

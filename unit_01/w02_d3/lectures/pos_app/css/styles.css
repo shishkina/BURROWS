@@ -1,0 +1,7 @@
+/*Removing default select behavior*/
+/*-webkit-user-select: none;*/
+
+label{
+	display: block;
+}
+

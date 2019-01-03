@@ -1,0 +1,71 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+div {
+	background-color: blue;
+	font-size: 3rem;
+	border: 1px solid black;
+	color: white;
+	max-width: 100%;
+	min-height: 2em;
+}
+
+#container {
+	background-color: white;
+	width: 100%;
+	border: none;
+}
+
+.thumbnail {
+	background-color: pink;
+	margin-top: 2rem;
+	margin-right: 25%;
+	margin-left: 25%;
+}
+
+/*Tablet Screens*/
+
+@media (min-width: 600px) {
+	div {
+		width: calc(100% / 2);
+		display: inline-block;
+		box-sizing: border-box;
+		float: left;
+		min-height: 1em;
+	}
+
+	.thumbnail {
+		display: inline-block;
+		width: calc(100%/3);
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+
+}
+
+/*Desktop*/
+@media (min-width: 900px) {
+	div {
+		width: calc(100%/4);
+		background-color: papayawhip;
+		color: black;
+		border-left: none;
+		border-right: none;
+		text-align: center;
+	}
+
+	.thumbnail {
+		border: 1px solid black;
+		margin-left: 1rem;
+		margin-right: 1rem;
+		width: calc(100%/3 - 2rem);
+	}
+}
+
+
+
+
+

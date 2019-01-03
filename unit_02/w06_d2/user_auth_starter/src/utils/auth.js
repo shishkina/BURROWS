@@ -1,0 +1,1 @@
+// We will be using this file to write a utility function, which is reusable across our application if need be, we can also call this a helper. This utility function will check to see if our user is logged in and redirect if the user is not logged in

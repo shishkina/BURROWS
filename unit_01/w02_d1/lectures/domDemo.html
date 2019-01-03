@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Happy Times</title>
+    <style media="screen">
+
+      .food-item {
+        background-color: lightgreen;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <ul class='food-items'>
+    </ul>
+
+    <script type="text/javascript">
+
+
+      // Given the foods... make them each li elements and put them on the screen
+      const foodNames = ['Apple', 'Orange', 'Grape'];
+      const ulNode = document.querySelector('.food-items');
+      let liNode;
+
+      for (let food of foodNames) {
+        liNode = document.createElement('li');
+        liNode.setAttribute('class', 'food-item');
+        liNode.innerHTML = food;
+        ulNode.appendChild(liNode);
+      }
+
+
+      // for each li... append the text ", yum!"
+      const liNodes = document.querySelectorAll('li');
+
+      for (let li of liNodes) {
+        li.innerHTML += ', yum';
+      }
+
+
+      // change grapes to an OH NO! message!
+      for (let li of liNodes) {
+        if (li.innerHTML === 'Grape, yum') {
+          li.innerHTML = 'grapes... oh no!';
+        }
+      }
+
+
+      // insert this item as the FIRST in the list...
+      const newFood = 'cucumber salad';
+      const cucumberLi = document.createElement('li');
+      cucumberLi.setAttribute('class', 'food-item');
+      cucumberLi.innerHTML = newFood;
+      ulNode.insertBefore(cucumberLi, ulNode.firstElementChild);
+
+
+      setTimeout(() => {
+        // remove the orange node thing
+        for (let li of liNodes) {
+          if (li.innerHTML === 'Orange, yum') {
+            li.remove();
+          }
+        }
+      }, 5000)
+
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(230, 230, 230);
+}
+
+.board {
+  display: inline-block;
+  font-size: 0
+}
+
+.cell {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: black;
+  border: 1px solid red;
+}
+
+/*.alive {
+  background-color: green;
+}
+
+.dead {
+  background-color: red;
+}*/

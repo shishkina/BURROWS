@@ -1,0 +1,89 @@
+
+/*GENERAL STYLING*/
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-size: 2rem;
+	font-family: 'Muli', sans-serif;
+	background-color: #FAFAFA;
+}
+
+/*FORM STYLING*/
+.search-form{
+	margin-top: 3rem;
+	width: 100%;
+	text-align: center;
+}
+
+input {
+	border: 1px solid black;
+	border-radius: 3px;
+	font-size: 1rem;
+	box-sizing: border-box;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	height: 2rem;
+	color: white;
+}
+
+button{
+	font-size: 1rem;
+	font-family:'Muli', sans-serif; 
+	height:100%;
+	color: white;
+	margin-top: 1rem;
+	border-radius: 3px;
+	border: 1px solid;
+	padding: 1em;
+	text-decoration: none;
+  cursor: pointer;
+  background: #1976D2;
+}
+
+/*WEATHER DATA STYLING*/
+.location-display{
+	padding-left: 1rem;
+	padding-right: 1rem;
+	margin-top: 1rem;
+	margin-bottom: 3rem;
+	text-align: center;
+}
+
+.temp-range{
+	padding-top: 1rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	display: inline-block;
+}
+
+.location {
+	font-size: 1.5rem;
+	color: black;
+	cursor: pointer;
+	display: inline-block;
+	padding: 1rem;
+}
+
+.location-list {
+	overflow: auto;
+	overflow-x:scroll; 
+	overflow-y:hidden;
+	white-space: nowrap;
+	margin-right: 3rem;
+	margin-left: 3rem;
+	margin-top: 2rem;
+	height: 4rem;
+}
+
+li{
+	list-style: none;
+}
+
+li:hover {
+	border-bottom: 1px solid #2962FF;
+	color: #2962FF;
+}
+

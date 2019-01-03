@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+
+    <h1 id='hi-message'>hi</h1>
+
+    <script type="text/javascript">
+
+      // I've been programming JS since... a year ago
+      // document.getElementById('hi-message').innerHTML = 'Hello';
+
+      // I've not caught up with querySelector... so I'll stick with jQuery
+      $('#hi-message').html('Hello jQuery');
+
+      // I've been programming JS since... like.. a month ago
+      // document.querySelector('#hi-message').innerHTML = 'Hello Yay';
+
+      // I've been trying to be cool... and write my own little dom manip library
+      // function editHTML(id, desiredHTML){
+      //   document.getElementById(id).innerHTML = desiredHTML;
+      // }
+      // editHTML('hi-message', 'banana');
+    </script>
+
+
+
+
+
+
+    <form class="text-machine">
+      <input type="text" name="message">
+      <input type="submit">
+    </form>
+    <ul class="text-list">
+    </ul>
+
+    <script type="text/javascript">
+
+      // var formNode = document.getElementsByClassName('text-machine')[0];
+      // formNode.addEventListener('submit', function(e){
+      //   e.preventDefault();
+      //   var targetFormNode = e.target;
+      //   var textInput = targetFormNode.children[0];
+      //   var listNode = document.getElementsByClassName('text-list')[0];
+      //   var liNode = document.createElement('li');
+      //   liNode.innerHTML = textInput.value;
+      //   listNode.appendChild(liNode);
+      // });
+
+      const $formNode = $('.text-machine');
+      $formNode.on('submit', function(e){
+        e.preventDefault();
+        const $messageInput = $(this).find('input[name="message"]');
+        const message = $messageInput.val();
+        const listItem = $('<li>').text(message);
+        $('.text-list').append(listItem);
+      });
+
+      // const formNode = document.querySelector('.text-machine');
+      // formNode.addEventListener('submit', function(e){
+      //   e.preventDefault();
+      //   const targetFormNode = e.target;
+      //   const textInput = targetFormNode.querySelector('input[name="message"]');
+      //   const listNode = document.querySelector('.text-list');
+      //   const liNode = document.createElement('li');
+      //   liNode.innerHTML = textInput.value;
+      //   listNode.appendChild(liNode);
+      // });
+
+    </script>
+
+
+
+  </body>
+</html>

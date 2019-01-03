@@ -1,0 +1,1 @@
+// We will be using this file to set up the configuration for our firebase DB, this is going to be using the NPM firebase package

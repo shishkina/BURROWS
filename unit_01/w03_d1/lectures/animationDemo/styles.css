@@ -1,0 +1,64 @@
+h1.hi {
+  color: red;
+}
+
+
+.wobbleIn {
+  animation-name: wobbleInAnimation;
+  animation-duration: 2s;
+}
+
+@keyframes wobbleInAnimation {
+  0% {
+    transform: skew(-10deg, -15deg);
+    color: red;
+  }
+  25% {
+    transform: skew(5deg, 6deg);
+    color: green;
+  }
+  50% {
+    transform: skew(-2deg, -3deg);
+    color: blue;
+  }
+  75% {
+    transform: skew(1deg, 1deg);
+    color: black;
+  }
+  100% {
+    transform: skew(0deg, 0deg);
+  }
+}
+
+
+
+
+.spotlight {
+  animation-name: backgroundLightUpAnimation;
+  animation-duration: 1s;
+}
+
+@keyframes backgroundLightUpAnimation {
+  0% {
+    background-color: rgb(202, 182, 235);
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+
+
+.fadeIn {
+  animation-name: fadeInAnimation;
+  animation-duration: 3s;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
